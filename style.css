@@ -162,6 +162,11 @@ position: relative;
   overflow: hidden;
  }
 
+ html {
+  scroll-behavior: smooth;
+}
+
+
  .skills {
   padding: 5rem 5%;
   background: var(--darker-bg); 
@@ -194,6 +199,49 @@ position: relative;
   color: var(--accent);
   margin-bottom: 1rem;
  }
+
+ .Projects {
+  padding: 60px 20px;
+  background-color: #000000;
+  text-align: center;
+}
+
+.projects-grid {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin-top: 30px;
+}
+
+.project-card {
+  background: rgba(46, 204, 113, 0.4);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 20px;
+  transition: transform 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.project-card h3 {
+  margin-top: 15px;
+}
+
+.project-card a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #000000;
+  text-decoration: none;
+}
+
 
  footer {
   background: var(--darker-bg);
