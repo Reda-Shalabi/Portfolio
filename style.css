@@ -236,6 +236,56 @@ position: relative;
   color: #ddd;
 }
 
+.education {
+  background-color: var(--darker-bg);
+  color: var(--text);
+  padding: 80px 5%;
+}
+
+.education h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: var(--accent);
+}
+
+.education-timeline {
+  border-left: 3px solid var(--accent);
+  padding-left: 30px;
+  margin-left: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.edu-entry {
+  position: relative;
+  margin-bottom: 50px;
+  padding-left: 40px;
+}
+
+.edu-icon {
+  position: absolute;
+  left: -40px;
+  top: 0;
+  font-size: 20px;
+  color: var(--accent);
+  background: var(--dark-bg);
+  padding: 5px;
+  border-radius: 50%;
+  border: 2px solid var(--accent);
+}
+
+.edu-date {
+  font-weight: bold;
+  color: var(--accent);
+  margin-bottom: 5px;
+  display: block;
+}
+
+
+
+
 .resume-button {
   padding: 12px 24px;
   font-size: 1rem;
@@ -287,46 +337,6 @@ position: relative;
   margin-bottom: 1rem;
  }
 
- .education {
-  background-color: var(--darker-bg);
-  color: var(--text);
-  padding: 80px 5%;
-  text-align: center;
-}
-
-.education h2 {
-  font-size: 2.5rem;
-  margin-bottom: 40px;
-  color: var(--accent);
-}
-
-.education-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
-  justify-content: center;
-}
-
-.edu-card {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  padding: 25px;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-  text-align: left;
-  transition: all 0.3s ease;
-}
-
-.edu-card h3 {
-  color: var(--accent);
-  font-size: 1.3rem;
-  margin-bottom: 10px;
-}
-
-.edu-card p {
-  margin-bottom: 8px;
-  color: #ccc;
-}
 
  .Projects {
   padding: 60px 20px;
@@ -543,6 +553,7 @@ position: relative;
     padding-left: 2rem;
   }
  }
+
 
 
 
