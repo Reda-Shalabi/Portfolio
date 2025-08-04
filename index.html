@@ -8,84 +8,119 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   <nav class="navbar">
+  <nav class="navbar">
     <a href="#home" class="logo"> Eng. Reda Shalabi</a>
     <ul class="nav-links">
       <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
       <li><a href="#Skills">Skills</a></li>
       <li><a href="#projects">Projects</a></li>
+      <li><a href="#testimonials">Testimonials</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
-   </nav>
+  </nav>
 
-   <section id="home" class="hero">
-   <div class="hero-content">
-    <h1>Full-Stack Developer</h1>
-    <p class="typing">Bulding digital experiences that merge creativity</p>
-  <p class="highlight">Welcome to My personal website. 👋🏼</p>
-    <a href="#contact" class="cta-button"> Let's connect</a>
-   </div>
-   <div class="hero-image">
-    <img src="assets/images/photo_2025-04-28_18-32-43.jpg" alt="profile-img" class="profile-img">
-   </div> 
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Full-Stack PHP Developer</h1>
+      <p class="typing">Building modern web solutions with Laravel & React.</p>
+      <p class="highlight">Welcome to my portfolio website 👋🏼</p>
+      <a href="#contact" class="cta-button">Let's connect</a>
+    </div>
+    <div class="hero-image">
+      <img src="assets/images/photo_2025-04-28_18-32-43.jpg" alt="profile-img" class="profile-img">
+    </div>
   </section>
 
+  <section id="about" class="about">
+  <div class="about-container">
+    <div class="about-text">
+      <h2>About Me</h2>
+      <p>I'm Reda Shalabi, a Full Stack PHP Developer specializing in Laravel and modern front-end frameworks like React. I build high-performance, responsive, and scalable web applications tailored to meet your needs and budget. I always deliver on time and provide continuous support even after project delivery.</p>
+      <a class="resume-button" href="assets/CV-RedaShalabi.pdf" download>Download My Resume</a>
+    </div>
+    <div class="about-image">
+      <img src="assets/images/photo_2025-04-11_10-28-58.jpg" alt="Reda Shalabi">
+    </div>
+  </div>
+</section>
+
+
   <section id="Skills" class="Skills">
-    <h2>Technical Experties</h2>
+    <h2>Technical Expertise</h2>
     <div class="skills-grid">
       <div class="skill-card">
         <i class="fa-solid fa-code"></i>
-        <h3>Fronted Development</h3>
-        <P> React, Vue, HTMLS, CSS3,JavaScript</P>
+        <h3>Front-End Development</h3>
+        <p>React, HTML5, CSS3, JavaScript</p>
       </div>
       <div class="skill-card">
         <i class="fa-solid fa-server"></i>
-        <h3>Backend Development</h3>
-        <p>Node.js, Python, MongDB, postgreSQL</p>
+        <h3>Back-End Development</h3>
+        <p>PHP, Laravel, MySQL, REST APIs</p>
       </div>
       <div class="skill-card">
-        <i class="fa-solid fa-paintbrush"></i>
-        <h3>UI/UX Design</h3>
-        <p>Figma, Adobe XD, Prototyping. User Testing</p>
+        <i class="fa-solid fa-database"></i>
+        <h3>Database & DevOps</h3>
+        <p>MySQL, Git, Hosting & Deployment</p>
       </div>
     </div>
   </section>
 
   <section id="projects" class="Projects">
-  <h2>My Projects</h2>
-  <div class="projects-grid">
-    <div class="project-card">
-      <img src="assets/images/Screenshot 2025-05-16 183733.png" alt="Project 1">
-      <h3>E-Commerce App</h3>
-      <p>Built with React and Firebase, users can browse, add to cart, and checkout with Stripe integration.</p>
-      <a href="https://reda-shalabi.github.io/StepUpVietnam/" target="_blank">View on GitHub</a>
+    <h2 style="color: var(--text);">My Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <img src="assets/images/Screenshot 2025-05-16 183733.png" alt="Project 1">
+        <h3>E-Commerce App</h3>
+        <p>Built with Laravel for the backend and React for the front-end. Features include product browsing, cart system, and Stripe checkout.</p>
+        <a href="https://reda-shalabi.github.io/StepUpVietnam/" target="_blank">View Live</a>
+      </div>
+      <div class="project-card">
+        <img src="assets/images/Screenshot 2025-06-09 140030.png" alt="Project 2">
+        <h3>Landing Page</h3>
+        <p>A modern responsive landing page built with HTML, CSS, and JavaScript.</p>
+        <a href="https://reda-shalabi.github.io/Portfolio/" target="_blank">View Live</a>
+      </div>
     </div>
+  </section>
 
-    <div class="project-card">
-      <img src="assets/images/Screenshot 2025-06-09 140030.png" alt="Project 2">
-      <h3>Landing Page</h3>
-      <p>A responsive landing page built with HTML, CSS, and JavaScript.</p>
-      <a href="https://reda-shalabi.github.io/Portfolio/" target="_blank">View on GitHub</a>
+  <section id="testimonials" class="testimonials">
+    <h2>What My Clients Say</h2>
+    <div class="testimonial-card">
+      <p>"Reda was amazing to work with! Delivered everything on time and the quality was top-notch. Highly recommend!"</p>
+      <strong>- Client A</strong>
     </div>
+    <div class="testimonial-card">
+      <p>"Professional, skilled, and always available when needed. My go-to developer for web solutions."</p>
+      <strong>- Client B</strong>
+    </div>
+  </section>
 
-  </div>
-  
-</section>
-
-  
-  <footer>
-    <p>&copy; 2025 Reda Shalabi. All rights reserved.</p>
-    <section id="contact"class="contact">
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <p>If you'd like to discuss a project or just say hi, feel free to reach out!</p>
+    <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
     <div class="social-links">
       <a href="https://github.com/Reda-Shalabi"><i class="fa-brands fa-github"></i></a>
       <a href="https://www.instagram.com/prfev_reda?igsh=MTZ4ZmFjd21ydXFtag=="><i class="fa-brands fa-instagram"></i></a>
       <a href="https://wa.me/201092945912"><i class="fa-brands fa-whatsapp"></i></a>
       <a href="https://www.facebook.com/share/1CDQiPptJx/?mibextid=wwXIfr"><i class="fa-brands fa-facebook"></i></a>
-      <a href="https://www.linkedin.com/in/reda-shalabi-1a23932b9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://www.linkedin.com/in/reda-shalabi-1a23932b9"><i class="fa-brands fa-linkedin"></i></a>
     </div>
   </section>
+
+  <footer>
+    <p>&copy; 2025 Reda Shalabi. All rights reserved.</p>
   </footer>
-   
+
   <script src="script.js"></script>
 </body>
 </html>
+
+
