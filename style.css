@@ -90,7 +90,7 @@ position: relative;
   overflow: hidden;
   white-space: nowrap;
   border-right: 2px solid var(--accent);
-  animation: typing 4s steps(50, end) forwards, blink 0.7s step-end infinite;
+  animation: typing 6s steps(50, end) forwards, blink 0.7s step-end infinite;
   font-size: 1.2rem;
   font-weight: 400;
   color: white;
@@ -98,7 +98,7 @@ position: relative;
 
 @keyframes typing {
   from { width: 0 }
-  to { width: 66% }
+  to { width: 72% }
 }
 
 @keyframes blink {
@@ -166,11 +166,98 @@ position: relative;
   scroll-behavior: smooth;
 }
 
+.about {
+  background-color: var(--dark-bg);
+  color: var(--text);
+  padding: 80px 5%;
+  text-align: center;
+}
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.about-text {
+  flex: 1 1 55%;
+}
+
+.about-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: var(--accent);
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #ddd;
+  margin-bottom: 20px;
+}
+
+.about-image {
+  flex: 1 1 35%;
+  text-align: center;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+  border: 2px solid var(--accent);
+  object-fit: cover;
+}
+
+.about h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: var(--accent);
+  position: relative;
+}
+
+.about h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: var(--accent);
+  margin: 10px auto 0;
+  border-radius: 5px;
+}
+
+.about p {
+  font-size: 1.5rem;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto 30px;
+  color: #ddd;
+}
+
+.resume-button {
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  background: linear-gradient(45deg, var(--accent), #27ae60);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.resume-button:hover {
+  background: #1f8b53;
+  transform: translateY(-2px);
+}
+
 
  .skills {
   padding: 5rem 5%;
-  background: var(--darker-bg); 
- }
+  background: var(--darker-bg);
+}
 
  .skills-grid {
   display: grid;
@@ -242,6 +329,107 @@ position: relative;
   text-decoration: none;
 }
 
+ .testimonials {
+  background-color: var(--darker-bg);
+  padding: 60px 20px;
+  text-align: center;
+  color: var(--text);
+}
+
+.testimonial-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 30px 20px;
+  margin: 20px auto;
+  max-width: 600px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+  backdrop-filter: blur(6px);
+}
+
+.testimonial-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--accent);
+}
+
+.testimonial-card p {
+  font-style: italic;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: #ddd;
+}
+
+.testimonial-card strong {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+ .contact {
+  background-color: var(--darker-bg);
+  padding: 80px 5%;
+  text-align: center;
+  color: var(--text);
+}
+
+.contact h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: var(--accent);
+}
+
+.contact p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  color: #ccc;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.03);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  backdrop-filter: blur(6px);
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  color: white;
+  font-size: 1rem;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 10px var(--accent-glow);
+}
+
+.contact-form button {
+  background: linear-gradient(45deg, var(--accent), #27ae60);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: #1f8b53;
+  transform: translateY(-2px);
+}
+
 
  footer {
   background: var(--darker-bg);
@@ -251,6 +439,7 @@ position: relative;
  }
 
  .social-links {
+  padding-top: 20px;
   display: flex;
   justify-content: center;
   gap: 2rem;
@@ -313,4 +502,6 @@ position: relative;
     padding-left: 2rem;
   }
  }
+
+
 
