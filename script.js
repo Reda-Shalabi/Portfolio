@@ -1,17 +1,32 @@
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute("href")).scrollIntoView({
+      behavior: "smooth",
+    });
+  });
+});
 
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("animate");
+    }
+  });
+});
 
 
-        window.addEventListener('scroll', () => {
-            const navbar = document.querySelector('.navbar');
-            window.scrollY > 50 ? 
-                navbar.style.backgroundColor = 'rgba(10, 10, 10, 0.98)' :
-                navbar.style.backgroundColor = 'rgba(10, 10, 10, 0.95)';
-        });
+document.querySelectorAll(".slide-in-right").forEach((el) => {
+  observer.observe(el);
+});
+
+  document.querySelectorAll('.slide-in-right, .slide-in-left').forEach(el => {
+    observer.observe(el);
+  });
+
+window.addEventListener("scroll", () => {
+  const navbar = document.querySelector(".navbar");
+  window.scrollY > 50
+    ? (navbar.style.backgroundColor = "rgba(10, 10, 10, 0.98)")
+    : (navbar.style.backgroundColor = "rgba(10, 10, 10, 0.95)");
+});
