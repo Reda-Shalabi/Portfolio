@@ -589,7 +589,7 @@ position: relative;
   color: #333; /* رمادي غامق */
 }
 
-.social-links a:hover .fa-instagram {
+.social-links a:hover .fa-upwork {
   color: #E1306C; /* وردي إنستجرام */
 }
 
@@ -597,7 +597,7 @@ position: relative;
   color: #25D366; /* أخضر واتساب */
 }
 
-.social-links a:hover .fa-facebook {
+.social-links a:hover .fa-envelope {
   color: #1877F2; /* أزرق فيسبوك */
 }
 
@@ -631,6 +631,7 @@ position: relative;
     padding-left: 2rem;
   }
  }
+
 
 
 
