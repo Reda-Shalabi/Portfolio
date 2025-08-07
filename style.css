@@ -265,6 +265,16 @@ position: relative;
   transform: translateX(0);
 }
 
+#read-more-btn {
+  background-color: #000000;
+  color: #249f5d;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
 
 .about h2 {
   font-size: 2.5rem;
@@ -346,7 +356,7 @@ position: relative;
   font-size: 1rem;
   font-weight: bold;
   background: linear-gradient(45deg, var(--accent), #27ae60);
-  color: #fff;
+  color: #000000;
   text-decoration: none;
   border-radius: 8px;
   transition: all 0.3s ease;
@@ -354,51 +364,86 @@ position: relative;
 }
 
 .resume-button:hover {
-  background: #1f8b53;
+  background: #ffffff;
   transform: translateY(-2px);
 }
 
 
- .skills {
-  padding: 5rem 5%;
-  background: var(--darker-bg);
+.Skills {
+  text-align: center;
+  padding: 40px;
 }
 
 .Skills h2 {
-  text-align: center;
-  color: var(--accent); 
-  margin-bottom: 2rem;
   font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: var(--accent);
+}
+
+.tabs {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.tab-btn {
+  padding: 10px 20px;
+  border: none;
+  background-color: #ffffff;
+  cursor: pointer;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.tab-btn.active {
+  background-color: #2acc71;
+  color: white;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.skills-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.skill-circle {
+  background: #504f4f;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  font-size: 24px;
+}
+
+.skill-circle:hover {
+  transform: scale(1.1);
+  background-color: #2acc71;
+  color: white;
+}
+
+.skill-circle span {
+  margin-top: 8px;
+  font-size: 14px;
 }
 
 
- .skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-  margin-top: 3rem;
- }
- 
- .skill-card {
-  padding: 2rem;
-  border-radius: 15px;
-  background: rgba(255, 255, 255, 0.1);
-  transition: all 0.3s ease;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(5px);
- }
-
- .skill-card:hover {
-  transform: translateY(-10px);
-  border-color: var(--accent);
-  box-shadow: 0 10px 30px var(--accent-glow);
- }
-
- .skill-card i {
-  font-size: 2.5rem;
-  color: var(--accent);
-  margin-bottom: 1rem;
- }
 
 
  .Projects {
@@ -415,40 +460,84 @@ position: relative;
 }
 
 .projects-grid {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
   gap: 30px;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  margin-top: 30px;
+  justify-content: center;
 }
 
 .project-card {
-  background: rgba(46, 204, 113, 0.4);
+  background-color: #000000;
   border-radius: 12px;
+  overflow: hidden;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  padding: 20px;
-  transition: transform 0.3s;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  max-width: 550px;
 }
 
 .project-card:hover {
-  transform: translateY(-10px);
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
 }
 
 .project-card img {
   width: 100%;
   height: auto;
-  border-radius: 10px;
+  border-bottom: 1px solid #eee;
 }
 
-.project-card h3 {
-  margin-top: 15px;
+.project-info {
+  padding: 20px;
 }
 
-.project-card a {
+.project-info h3 {
+  margin-bottom: 10px;
+  color: #2acc71;
+}
+
+.project-info p {
+  margin-bottom: 15px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #c5c5c5;
+}
+
+.tech-details {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+  font-size: 14px;
+  color: #555;
+}
+
+.project-buttons a {
   display: inline-block;
-  margin-top: 10px;
-  color: #000000;
+  padding: 8px 14px;
+  margin-right: 10px;
+  border-radius: 6px;
+  font-weight: bold;
   text-decoration: none;
+  transition: 0.3s;
 }
+
+.btn-live {
+  background-color: #2acc71;
+  color: rgb(0, 0, 0);
+}
+
+.btn-code {
+  background-color: #333;
+  color: white;
+}
+
+.btn-live:hover,
+.btn-code:hover {
+  opacity: 0.85;
+}
+
+
 
  .testimonials {
   background-color: var(--darker-bg);
@@ -457,13 +546,12 @@ position: relative;
   color: var(--text);
 }
 
- .testimonials h2 {
+.testimonials h2 {
   text-align: center;
   color: var(--accent); 
   margin-bottom: 2rem;
   font-size: 2.5rem;
 }
-
 
 .testimonial-card {
   background: rgba(255, 255, 255, 0.05);
@@ -493,6 +581,17 @@ position: relative;
   color: var(--accent);
   font-weight: 600;
 }
+
+/* ⭐ قسم النجوم */
+.rating {
+  margin-bottom: 0.8rem;
+  color: #ffc107;
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+}
+
 
  .contact {
   background-color: var(--darker-bg);
@@ -559,6 +658,13 @@ position: relative;
   transform: translateY(-2px);
 }
 
+        #thanks-message {
+            display:none;
+             color:green;
+              margin-top:20px;
+               font-weight:bold;
+        }
+
 
  footer {
   background: var(--darker-bg);
@@ -572,12 +678,21 @@ position: relative;
   display: flex;
   justify-content: center;
   gap: 2rem;
+  flex-wrap: wrap;
 }
 
 .social-links a {
+  font-size: 1.8rem; /* حجم الأيقونة */
   color: var(--text);
-  font-size: 1.5rem;
-  transition: all 0.3s ease;
+  background-color: rgba(255, 255, 255, 0.05);
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: 0.3s ease;
+  text-decoration: none;
 }
 
 .social-links a:hover {
@@ -590,7 +705,7 @@ position: relative;
 }
 
 .social-links a:hover .fa-upwork {
-  color: #E1306C; /* وردي إنستجرام */
+  color: #E1306C; /* وردي  */
 }
 
 .social-links a:hover .fa-whatsapp {
@@ -631,6 +746,9 @@ position: relative;
     padding-left: 2rem;
   }
  }
+
+
+
 
 
 
