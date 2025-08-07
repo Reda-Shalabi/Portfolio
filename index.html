@@ -19,7 +19,7 @@
       <ul class="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
-        <li><a href="#education">Education</a></li>
+        <li><a href="#education">Experience</a></li>
         <li><a href="#Skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#testimonials">Testimonials</a></li>
@@ -34,7 +34,7 @@
           Building modern web solutions with Laravel & React.
         </p>
         <p class="highlight">Welcome to my portfolio website 👋🏼</p>
-        <a href="#contact" class="cta-button">Let's connect</a>
+      <a class="resume-button" href="assets/pdf/CV Reda Shalabi.pdf" download>Download My Resume</a>
       </div>
       <div class="hero-image">
         <img
@@ -46,90 +46,43 @@
     </section>
 
     <section id="about" class="about">
-      <div class="about-container">
-        <div class="about-text slide-in-left">
-          <h2>About Me</h2>
-          <p>
-🌟 I'm a Full Stack Developer
-With over 1 year of proven enterprise-level success, I believe that a winning project begins with clear goals and strong communication. I operate with a policy of ethical dealing, ensuring no surprises and no disappointments — a principle that has helped me become one of the most highly rated full-stack developers on Upwork globally.
-
-💼 What I Do:
-
-🚀 Full Stack & Backend Development:
-
-✅ PHP / Laravel / CodeIgniter
-
-✅ Node.js
-
-✅ API Development & Integration
-
-✅ MySQL / MongoDB
-
-🛒 E-commerce Solutions:
-✅ Custom E-commerce Development
-
-✅ WooCommerce Custom Development
-
-✅ Shopify Custom Development
-
-🌐 Frontend & UI/UX:
-✅ HTML5, CSS3, Bootstrap, JavaScript
-
-✅ Responsive Web Design (Mobile-First)
-
-✅ Custom UI Layout Design (Figma / Photoshop)
-
-🧩 WordPress Expertise:
-✅ Custom Theme Development (From Scratch)
-
-✅ Theme Customization (DIVI, Ample, Allegiant, BeTheme, Silicon, etc.)
-
-✅ PSD to WordPress Conversion
-
-✅ Plugin Development & Customization
-
-✅ WordPress Integration into Existing Sites
-
-📱 Mobile App Development:
-✅ React Native Development
-
-✅ Cross-Platform Mobile Apps
-
-🔥 Why Work With Me?
-✅ Fast & Reliable – I specialize in RUSH projects and quick delivery
-
-✅ Clean Code – Scalable, maintainable, and well-documented
-
-✅ Excellent Communication – I keep you updated every step of the way
-
-✅ 100% Commitment – Every project is important, big or small
-
-            🚀 What I Offer:
-Launching fast, secure, and responsive websites
-
-Developing robust backends with clean architecture
-
-Translating your designs into production-ready code
-
-Long-term support and iteration based on your needs
-
-Let’s collaborate to build something great.
-
-
-🟢 Ready to Start?
-Let’s bring your idea to life — get in touch today, and I can start working on your project tonight!
-          </p>
-          <a class="resume-button" href="assets/pdf/CV Reda Shalabi.pdf" download >Download My Resume</a>
-        </div>
-
-        <div class="about-image slide-in-right">
-          <img
-            src="assets/images/ChatGPT Image Aug 6, 2025, 09_28_21 PM.png"
-            alt="Reda Shalabi"
-          />
-        </div>
+  <div class="about-container">
+    <div class="about-text slide-in-left">
+      <h2>About Me</h2>
+      <div id="about-summary">
+        <p>
+          I’m a Full-Stack Web Developer specialized in <strong>PHP (Laravel)</strong> for back-end development and <strong>React</strong> for front-end interfaces. With my tech stack, I build powerful, scalable, and secure web applications tailored to your business needs.
+ </p>
       </div>
-    </section>
+
+      <div id="about-full" style="display: none;">
+        <p>
+          My technical skills allow me to handle every stage of the project — from database architecture to UI design. Here's how each tool brings value:
+        </p>
+        <ul>
+          <li><strong>PHP & Laravel:</strong> Robust and secure server-side development, RESTful APIs, authentication systems, and advanced business logic.</li>
+          <li><strong>React:</strong> Fast and dynamic single-page applications (SPAs), seamless user experiences, and real-time interactivity.</li>
+          <li><strong>MySQL:</strong> Optimized relational databases for efficient data storage and queries.</li>
+          <li><strong>Git & GitHub:</strong> Version control for safe collaboration and continuous integration.</li>
+          <li><strong>HTML/CSS/JS:</strong> Clean, responsive designs with interactive elements across all devices.</li>
+        </ul>
+        <p>
+          I also focus heavily on <strong>performance</strong>, <strong>mobile responsiveness</strong>, and <strong>security best practices</strong> such as input validation, password hashing, and protection from common vulnerabilities (SQL Injection, XSS, CSRF).
+        </p>
+        <p class="highlight">
+          Whether you need an e-commerce platform, a custom CMS, a portfolio, or a business website — I’m here to turn your ideas into a professional, secure, and user-friendly product.
+        </p>
+        
+      </div>
+                   <button id="read-more-btn">Read More</button>
+
+    </div>
+
+    <div class="about-image slide-in-right">
+      <img src="assets/images/ChatGPT Image Aug 6, 2025, 09_28_21 PM.png" alt="Reda Shalabi" />
+    </div>
+  </div>
+</section>
 
     <section id="education" class="education">
       <h2>Education</h2>
@@ -150,7 +103,7 @@ Let’s bring your idea to life — get in touch today, and I can start working 
             <h3>NTI – National Telecommunication Institute</h3>
             <p><strong>Partnered with:</strong> ITIDA</p>
             <p><strong>Program:</strong> Full Stack Web Development</p>
-            <p><strong>Duration:</strong> 120 Hours</p>
+            <p style="color: var(--accent);"><strong>Duration:</strong> 120 Hours</p>
             <p><strong>Status:</strong> Completed with Certificate</p>
           </div>
         </div>
@@ -166,80 +119,136 @@ Let’s bring your idea to life — get in touch today, and I can start working 
       </div>
     </section>
 
-    <section id="Skills" class="Skills">
-      <h2>Skills</h2>
-      <div class="skills-grid">
-        <div class="skill-card">
-          <i class="fa-solid fa-code"></i>
-          <h3>Front-End Development</h3>
-          <p>React, HTML5, CSS3, JavaScript</p>
-        </div>
-        <div class="skill-card">
-          <i class="fa-solid fa-server"></i>
-          <h3>Back-End Development</h3>
-          <p>PHP, Laravel, MySQL, REST APIs</p>
-        </div>
-        <div class="skill-card">
-          <i class="fa-solid fa-database"></i>
-          <h3>Database & DevOps</h3>
-          <p>MySQL, Git, Hosting & Deployment</p>
-        </div>
-      </div>
-    </section>
+<section id="Skills" class="Skills">
+  <h2>Technical Skills</h2>
 
-    <section id="projects" class="Projects">
-      <h2>My Projects</h2>
-      <div class="projects-grid">
-        <div class="project-card">
-          <img
-            src="assets/images/Screenshot 2025-05-16 183733.png"
-            alt="Project 1"
-          />
-          <h3>E-Commerce App</h3>
-          <p>
-            Built with Laravel for the backend and React for the front-end.
-            Features include product browsing, cart system, and Stripe checkout.
-          </p>
-          <a
-            href="https://reda-shalabi.github.io/StepUpVietnam/"
-            target="_blank"
-            >View Live</a
-          >
-        </div>
-        <div class="project-card">
-          <img
-            src="assets/images/Screenshot 2025-06-09 140030.png"
-            alt="Project 2"
-          />
-          <h3>Landing Page</h3>
-          <p>
-            A modern responsive landing page built with HTML, CSS, and
-            JavaScript.
-          </p>
-          <a href="https://reda-shalabi.github.io/Portfolio/" target="_blank"
-            >View Live</a
-          >
-        </div>
-      </div>
-    </section>
+  <div class="tabs">
+    <button class="tab-btn active" onclick="showTab('frontend')">Front-End</button>
+    <button class="tab-btn" onclick="showTab('backend')">Back-End</button>
+    <button class="tab-btn" onclick="showTab('database')">Database</button>
+    <button class="tab-btn" onclick="showTab('tools')">Tools & DevOps</button>
+  </div>
 
-    <section id="testimonials" class="testimonials">
-      <h2>What My Clients Say</h2>
-      <div class="testimonial-card">
+  <!-- Front-End -->
+  <div class="tab-content active" id="frontend">
+    <div class="skills-grid">
+      <div class="skill-circle"><i class="fa-brands fa-react"></i><span>React</span></div>
+      <div class="skill-circle"><i class="fa-brands fa-js"></i><span>JavaScript</span></div>
+      <div class="skill-circle"><i class="fa-brands fa-html5"></i><span>HTML5</span></div>
+      <div class="skill-circle"><i class="fa-brands fa-css3-alt"></i><span>CSS3</span></div>
+      <div class="skill-circle"><i class="fa-brands fa-bootstrap"></i><span>Bootstrap</span></div>
+      <div class="skill-circle"><i class="fa-solid fa-paintbrush"></i><span>Tailwind</span></div>
+    </div>
+  </div>
+
+  <!-- Back-End -->
+  <div class="tab-content" id="backend">
+    <div class="skills-grid">
+      <div class="skill-circle"><i class="fa-brands fa-php"></i><span>PHP</span></div>
+      <div class="skill-circle"><i class="fa-brands fa-laravel"></i><span>Laravel</span></div>
+      <div class="skill-circle"><i class="fa-solid fa-gears"></i><span>RESTful APIs</span></div>
+    </div>
+  </div>
+
+  <!-- Database -->
+  <div class="tab-content" id="database">
+    <div class="skills-grid">
+      <div class="skill-circle"><i class="fa-solid fa-database"></i><span>MySQL</span></div>
+      <div class="skill-circle"><i class="fa-brands fa-git-alt"></i><span>Git</span></div>
+      <div class="skill-circle"><i class="fa-brands fa-github"></i><span>GitHub</span></div>
+    </div>
+  </div>
+
+  <!-- Tools & Hosting -->
+  <div class="tab-content" id="tools">
+    <div class="skills-grid">
+      <div class="skill-circle"><i class="fa-solid fa-server"></i><span>cPanel</span></div>
+      <div class="skill-circle"><i class="fa-solid fa-globe"></i><span>Hostinger</span></div>
+      <div class="skill-circle"><i class="fa-brands fa-figma"></i><span>Figma to Code</span></div>
+    </div>
+  </div>
+</section>
+
+
+
+<section id="projects" class="Projects">
+  <h2>My Projects</h2>
+  <div class="projects-grid">
+
+    <!-- Project 1 -->
+    <div class="project-card">
+  <img src="assets/images/Screenshot 2025-05-16 183733.png" alt="Project Title" />
+  <div class="project-info">
+    <h3>Project Title</h3>
+    <p>
+      Brief description about the project, its functionality, and purpose.
+    </p>
+    <div class="tech-details">
+      <div><strong>Backend:</strong> Laravel, MySQL</div>
+      <div><strong>Frontend:</strong> React, Tailwind</div>
+    </div>
+    <div class="project-buttons">
+      <a class="btn-live" href="https://your-live-link.com" target="_blank">🔗 View Live</a>
+      <a class="btn-code" href="https://github.com/your-repo" target="_blank">💻 GitHub</a>
+    </div>
+  </div>
+</div>
+
+
+    <!-- Project 2 -->
+    <div class="project-card">
+      <img src="assets/images/Screenshot 2025-06-09 140030.png" alt="Project 2" />
+      <div class="project-info">
+        <h3>Landing Page</h3>
         <p>
-          "Reda was amazing to work with! Delivered everything on time and the
-          quality was top-notch. Highly recommend!"
+          A clean and modern landing page built with <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong>.
         </p>
-        <strong>- Client A</strong>
+        <div class="project-buttons">
+          <a class="btn-live" href="https://reda-shalabi.github.io/Portfolio/" target="_blank">🔗 View Live</a>
+                <a class="btn-code" href="https://github.com/your-repo" target="_blank">💻 GitHub</a>
+
+        </div>
       </div>
-      <div class="testimonial-card">
-        <p>
-          "Professional, skilled, and always available when needed. My go-to
-          developer for web solutions."
-        </p>
-        <strong>- Client B</strong>
-      </div>
-    </section>
+    </div>
+
+  </div>
+</section>
+
+
+   <section id="testimonials" class="testimonials">
+  <h2>What My Clients Say</h2>
+
+  <div class="testimonial-card">
+    <p>
+      "Reda was amazing to work with! Delivered everything on time and the
+      quality was top-notch. Highly recommend!"
+    </p>
+    <div class="rating">
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star-half-stroke"></i>
+    </div>
+    <strong>- Client A</strong>
+  </div>
+
+  <div class="testimonial-card">
+    <p>
+      "Professional, skilled, and always available when needed. My go-to
+      developer for web solutions."
+    </p>
+    <div class="rating">
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+    </div>
+    <strong>- Client B</strong>
+  </div>
+</section>
+
 
     <section id="contact" class="contact">
       <h2>Contact Me</h2>
@@ -247,9 +256,10 @@ Let’s bring your idea to life — get in touch today, and I can start working 
         If you'd like to discuss a project or just say hi, feel free to reach
         out!
       </p>
+      <div class="container">
       <form
         class="contact-form"
-        action="https://formspree.io/f/your-form-id"
+        action="https://formspree.io/f/mdkzegjq"
         method="POST"
       >
         <input type="text" name="name" placeholder="Your Name" required />
@@ -262,6 +272,11 @@ Let’s bring your idea to life — get in touch today, and I can start working 
         ></textarea>
         <button type="submit">Send Message</button>
       </form>
+        <div id="thanks-message">
+"You have successfully registered. Thank you for getting in touch with us."
+
+        </div>
+        </div>
       <div class="social-links">
       <a href="https://www.linkedin.com/in/reda-shalabi-1a23932b9"
           ><i class="fa-brands fa-linkedin"></i
@@ -288,10 +303,6 @@ Let’s bring your idea to life — get in touch today, and I can start working 
     <script src="script.js"></script>
   </body>
 </html>
-
-
-
-
 
 
 
